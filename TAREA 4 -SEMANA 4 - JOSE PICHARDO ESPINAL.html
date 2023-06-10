@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="estilo.css">
+ 
+ <meta charset="utf-8">
+  <title>Tabla HTML y formulario - JOSE PICHARDO ESPINAL </title>
+<h1> TABLA HTML Y FORMULARIO - JOSE PICHARDO ESPINAL </h1>
+  <br>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 55%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Compañía</th>
+      <th>Contacto</th>
+      <th>País</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>México</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Giovanni Rovelli</td>
+      <td>Italy</td>
+    </tr>
+  </table
+<br>
+<br>
+<br>
+  <h1>Formulario</h1>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+      <option value="Germany">Germany</option>
+      <option value="México">México</option>
+      <option value="Austria">Austria</option>
+      <option value="UK">UK</option>
+      <option value="Canada">Canada</option>
+      <option value="Italy">Italy</option>
+    </select><br>
+
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha"><br>
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" minlength="8" required><br>
+
+    <label for="genero">Género:</label>
+    <input type="radio" id="genero-masculino" name="genero" value="Masculino">
+    <label for="genero-masculino">Masculino</label>
+    <input type="radio" id="genero-femenino" name="genero" value="Femenino">
+    <label for="genero-femenino">Femenino</label><br>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpiar">
+  </form>
+</body>
+</html>
